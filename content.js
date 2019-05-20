@@ -14,7 +14,6 @@ document.head.appendChild(imported);
 let youtubeKodiCast = document.createElement("Button")
 youtubeKodiCast.setAttribute("id", "kodicast")
 youtubeKodiCast.setAttribute("class", "tyle-scope  ytd-share-panel-header-renderer")
-// youtubeKodiCast.innerHTML = "KODI-CAST"
 let kodi = chrome.extension.getURL("images/kodi-logo.png")
 youtubeKodiCast.innerHTML = `<img src="${kodi}" />`
 youtubeKodiCast.style = "top:0;right:0;position:fixed;z-index: 9999;visibility:hidden"
