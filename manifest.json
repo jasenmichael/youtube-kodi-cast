@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube Kodi Cast",
+    "version": "0.1",
+    "permissions": [
+        "<all_urls>",
+        "webRequest"
+    ],
+    "web_accessible_resources": [
+        "images/kodi-logo.png"
+    ],
+    "content_scripts": [{
+        "matches": [
+            "https://www.youtube.com/watch?v=*"
+        ],
+        "js": [
+            "axios.min.js",
+            "content.js"
+        ],
+        "run_at": "document_end"
+    }]
+}
