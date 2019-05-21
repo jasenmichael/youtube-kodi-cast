@@ -1,10 +1,21 @@
 {
     "manifest_version": 2,
     "name": "Youtube Kodi Cast",
-    "version": "0.1",
+    "version": "0.3",
+    "desription": "browser extension to share YouTube videos to Kodi",
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": true,
+        "open_in_tab": false
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+      },
     "permissions": [
         "<all_urls>",
-        "webRequest"
+        "webRequest",
+        "storage"
     ],
     "web_accessible_resources": [
         "images/kodi-logo.png"
