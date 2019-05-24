@@ -35,10 +35,10 @@ function saveOptions(e) {
 function restoreOptions() {
     let options = {}
 
-    document.getElementById("host").value = localStorage.getItem("host") || ''
-    document.getElementById("port").value = localStorage.getItem("port") || ''
-    document.getElementById("user").value = localStorage.getItem("user") || ''
-    document.getElementById("pass").value = localStorage.getItem("pass") || ''
+    document.getElementById("host").value = localStorage.getItem("host") || 'localhost'
+    document.getElementById("port").value = localStorage.getItem("port") || '8080'
+    document.getElementById("user").value = localStorage.getItem("user") || 'kodi'
+    document.getElementById("pass").value = localStorage.getItem("pass") || 'kodi'
     options.username = localStorage.getItem("user") || '',
     options.password = localStorage.getItem("pass") || '',
     options.ip = localStorage.getItem("host") || '',
