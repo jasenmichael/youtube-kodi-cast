@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
-    "name": "test config from ",
-    "version": "2.0",
+    "name": "Youtube Kodi Cast",
+    "version": "2.1",
     "options_ui": {
         "page": "options.html",
         "browser_style": true,
